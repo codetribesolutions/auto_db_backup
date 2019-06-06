@@ -15,15 +15,15 @@ MYSQL_HOST=host \
 MYSQL_PORT=port \
 MYSQL_USER=myuser \
 MYSQL_PASS=pass \
-MYSQL_DB=db \
+MYSQL_DB=db 
 
 *Step 2* : Following are the steps for how to use in project.
 
-1.) Composer require codetribesolutions/auto_db_backup
-2.) add auto_db_backup/Db2CloudServiceProvider.php in app.php
-3.) php artisan vendor:publish --tag=backupconfig
-4.) Change app/backupconfig.php file of your project
-5.) php artisan db:Backup
+1.) Composer require codetribesolutions/auto_db_backup \
+2.) add auto_db_backup/Db2CloudServiceProvider.php in app.php \
+3.) php artisan vendor:publish --tag=backupconfig \
+4.) Change app/backupconfig.php file of your project \
+5.) php artisan db:Backup 
 
 *Step 3* : Set a Cron Job ( Cron is a standard Linux feature that allows you to schedule tasks )
 
